@@ -75,9 +75,9 @@ jobs:
     strategy:
       matrix:
         arch:
-          # - name: x86_64
-          #   container: ghcr.io/project-chip/chip-build:1
-          #   runner: ubuntu-22.04
+          - name: x86_64
+            container: ghcr.io/project-chip/chip-build:1
+            runner: ubuntu-22.04
           - name: aarch64
             container: docker.io/agners/aarch64-chip-build:1
             runner: ARM64
